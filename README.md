@@ -1,137 +1,122 @@
-# MediSight.AI - AI Medical Report Analyzer 
+# MediSight.AI 🩺💻
 
-This full-stack web application allows users to upload a medical report PDF, receive an AI-generated analysis performed locally using a transformer model, and ask follow-up questions via a chat interface.
+![MediSight.AI](https://img.shields.io/badge/MediSight.AI-Local--First%20AI%20Medical%20Analyzer-blue?style=for-the-badge&logo=appveyor)
 
-The core function runs entirely on your local machine. **This ensures greater privacy for sensitive health records as your documents are never uploaded to external servers or third-party services.**
+Welcome to **MediSight.AI**, a local-first full-stack application designed to analyze medical PDFs using the AI model Apollo2-2B. This project emphasizes privacy and patient-friendly insights without relying on external APIs or cloud services.
 
-**Disclaimer:** This tool is for informational purposes only and does not substitute professional medical advice. The AI-generated analysis may contain inaccuracies. Always consult a qualified healthcare provider for any health concerns or before making any decisions related to your health or treatment.
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
 ## Features
 
-* **PDF Upload:** Securely upload medical reports in PDF format directly within your browser.
-* **Enhanced Privacy:** By running the AI model locally, your medical report **never leaves your computer**, offering significantly better privacy compared to cloud-based analysis services.
-* **Local AI Analysis:** Get a structured analysis generated on your own machine using `FreedomIntelligence/Apollo2-2B`, including:
-    * Overall Summary / Key Findings (Interpretive Paragraph)
-    * Potential Health Risks (Bulleted)
-    * Combined Dietary & Lifestyle Recommendations (Single Bulleted List)
-* **Patient-Friendly Language:** Analysis is prompted to be understandable by patients.
-* **Chat Interface:** Ask follow-up questions based on the analyzed report context, also processed locally.
-* **Modern UI:** Clean interface styled with Tailwind CSS, inspired by healthcare applications.
-* **No External API Keys Needed:** Fully functional after initial model download without requiring accounts or API keys for external services.
+- **Local Processing**: All data processing occurs on your device, ensuring that sensitive information remains private.
+- **AI-Powered Insights**: Leverage the Apollo2-2B model to gain valuable insights from medical reports.
+- **User-Friendly Interface**: A clean and intuitive chat interface allows users to interact seamlessly with the application.
+- **FastAPI Backend**: The backend is built using FastAPI, providing a robust and efficient server for handling requests.
+- **PDF Analysis**: Extract and analyze information from medical PDFs with ease.
+- **Responsive Design**: Built with Tailwind CSS, the app is mobile-friendly and visually appealing.
 
-## Project Structure
+## Technologies Used
 
-├── backend/
+This project utilizes a variety of technologies to create a smooth user experience:
 
-│ ├── main.py # FastAPI application logic (local model inference)
+- **AI & Machine Learning**: Apollo2-2B model for medical analysis
+- **Backend**: FastAPI for efficient API development
+- **Frontend**: Tailwind CSS for styling and responsiveness
+- **PDF Processing**: Libraries for extracting data from PDF files
+- **Data Handling**: PyTorch for machine learning operations
+- **Transformers**: For natural language processing tasks
 
-│ ├── requirements.txt # Python dependencies
+## Installation
 
-│ └── env/ #Access_Tokens
+To get started with MediSight.AI, follow these steps:
 
-├── frontend/
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/natharmatron/MediSight.AI.git
+   cd MediSight.AI
+   ```
 
-│ ├── index.html # HTML structure
+2. **Set Up the Environment**:
+   It is recommended to use a virtual environment. You can create one using:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-│ └── script.js # JavaScript for frontend logic
+3. **Install Dependencies**:
+   Install the required packages using pip:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-└── README.md # This file
+4. **Run the Application**:
+   Start the server with:
+   ```bash
+   uvicorn app.main:app --reload
+   ```
 
+5. **Access the Application**:
+   Open your web browser and go to `http://localhost:8000`.
 
-## Tech Stack
+## Usage
 
-* **Frontend:**
-    * HTML5
-    * CSS3 / Tailwind CSS (via CDN)
-    * JavaScript (Vanilla)
-    * Font Awesome (via CDN for icons)
-* **Backend:**
-    * Python 3.8+
-    * FastAPI (Web framework)
-    * Uvicorn (ASGI server)
-    * Transformers (Hugging Face library for local models)
-    * PyTorch (Backend for Transformers)
-    * Accelerate (For efficient model loading across devices)
-    * PDFPlumber (PDF text extraction)
-* **AI Model:**
-    * `FreedomIntelligence/Apollo2-2B` (Executed locally)
+Using MediSight.AI is straightforward:
 
-## Setup Instructions
+1. **Upload a Medical PDF**: Drag and drop your PDF file into the designated area.
+2. **Interact with the AI**: Use the chat interface to ask questions or request specific insights from the uploaded document.
+3. **Review Insights**: The AI will provide responses based on the content of the PDF, ensuring you get the information you need.
 
-**1. Prerequisites:**
+### Example Interaction
 
-* **Python 3.8+:** Ensure Python is installed ([python.org](https://python.org/)).
-* **pip:** Python package installer (usually included with Python).
-* **Git:** (Optional) For cloning the repository.
-* **Hardware:**
-    * **RAM:** Significant RAM required (16GB+ recommended, more might be needed depending on system).
-    * **GPU:** Highly recommended for acceptable performance. An NVIDIA GPU with substantial VRAM (e.g., 8GB+, ideally 12GB or more) is suggested. CPU-only execution will be very slow.
-    * **Storage:** Several gigabytes of disk space needed to download the AI model weights.
+- **User**: "What are the key findings in this report?"
+- **AI**: "The report indicates elevated cholesterol levels and recommends further testing."
 
-**2. Backend Setup:**
+## Contributing
 
-* Clone the repository (if applicable) or download the code.
-* Navigate to the `backend` directory in your terminal:
-    ```bash
-    cd path/to/project/backend
-    ```
-* Create and activate a Python virtual environment (recommended):
-    ```bash
-    # Create
-    python -m venv venv
-    # Activate (macOS/Linux)
-    source venv/bin/activate
-    # Activate (Windows)
-    .\venv\Scripts\activate
-    ```
-* Install Python dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    *(Note: `torch` installation might take time. Ensure you have the correct version for your hardware - CPU or CUDA if using NVIDIA GPU.)*
-    *(Optional: If using model quantization, install `bitsandbytes`: `pip install bitsandbytes`)*
+We welcome contributions to MediSight.AI! If you'd like to help, please follow these steps:
 
-**3. Frontend Setup:**
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Fork**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Open a Pull Request**: Go to the original repository and click "New Pull Request".
 
-* No build steps are required. The frontend is ready to use.
+## License
 
-## Running the Application
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-**1. Start the Backend Server:**
+## Contact
 
-* Ensure you are in the `backend` directory with your virtual environment activated.
-* Run the FastAPI server using Uvicorn:
-    ```bash
-    uvicorn main:app --reload --host 127.0.0.1 --port 8000
-    ```
-    *(Using `127.0.0.1` explicitly binds to localhost only, enhancing security slightly compared to `0.0.0.0` if network access isn't needed)*
-* **First Run:** The server will download the `FreedomIntelligence/Apollo2-2B` model weights (several GB). This may take significant time. Subsequent startups are faster.
-* Keep the terminal running.
+For any questions or feedback, feel free to reach out:
 
-**2. Access the Frontend:**
+- **Email**: [your-email@example.com](mailto:your-email@example.com)
+- **GitHub**: [natharmatron](https://github.com/natharmatron)
 
-* Navigate to the `frontend` directory in your file explorer.
-* Open the `index.html` file directly in your web browser.
+## Releases
 
-## How to Use
+To access the latest releases of MediSight.AI, visit our [Releases](https://github.com/natharmatron/MediSight.AI/releases) section. Here, you can download the latest versions and execute them on your local machine.
 
-1.  Open `index.html` in your browser.
-2.  Click **"Select PDF file"** and choose your medical report. The file stays in your browser and is sent only to the local backend running on your machine.
-3.  Click **"Analyze Report"**.
-4.  Wait for local processing. Performance depends on your hardware.
-5.  The **Analysis Results** section will display the AI-generated summary, risks, and recommendations.
-6.  Use the **Ask Follow-up Questions** section for further clarification.
+## Conclusion
 
-## Notes & Considerations
+MediSight.AI aims to revolutionize the way we analyze medical documents by prioritizing privacy and user experience. We invite you to explore the project, contribute, and help us make healthcare insights more accessible and secure.
 
-* **Privacy:** The primary advantage of this tool is privacy. Your sensitive medical documents are processed locally and are not uploaded to any third-party cloud service.
-* **Hardware Requirements:** Running the 2B parameter model locally is resource-intensive. Performance heavily depends on your CPU, RAM, and especially GPU VRAM.
-* **Performance:** Analysis time will be longer than using cloud APIs due to local processing and the multi-call approach.
-* **Model Download:** The initial model download requires time and disk space.
-* **Accuracy:** AI output is not guaranteed to be accurate or complete. **Always consult a qualified healthcare professional.**
-
-# Created By 
-### Trisach Joshi
-### Diptak Chattopadhyay
-### Aniket Sahu
-
+Thank you for your interest in MediSight.AI! Your feedback and contributions are highly appreciated.
